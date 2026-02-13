@@ -11,6 +11,7 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import counterReducer from "./slices/couterSlice";
+import notificationReducer from "./slices/notificationSlice";
 import themeReducer from "./slices/themeSlice";
 import userReducer from "./slices/userSlice";
 
@@ -23,6 +24,7 @@ export const store = configureStore({
 		counter: counterReducer,
 		theme: themeReducer,
 		user: persistedUserReducer,
+		notification: notificationReducer,
 	},
 	middleware: (getDefaultMiddleware) =>
 		getDefaultMiddleware({

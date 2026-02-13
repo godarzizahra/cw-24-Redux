@@ -1,4 +1,5 @@
 import CounterPage from "./pages/counter/counterPage";
+import NotificationModal from "./pages/notification/notification";
 import ThemePage from "./pages/theme/themePage";
 import UserAuthPage from "./pages/userAuth/userAuth";
 
@@ -8,6 +9,7 @@ function App() {
 			<CounterPage />
 			<ThemePage />
 			<UserAuthPage />
+			<NotificationModal />
 		</>
 	);
 }
